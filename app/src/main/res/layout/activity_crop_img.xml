@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Crop_img">
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="338dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="340dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="recognized text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewView" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:maxWidth="300dp"
+        android:maxHeight="60dp"
+        android:minWidth="150dp"
+        android:minHeight="40dp"
+        android:text="Обрезать" />
+
+    <Button
+        android:id="@+id/Tesser"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:maxWidth="300dp"
+        android:maxHeight="60dp"
+        android:minWidth="150dp"
+        android:minHeight="40dp"
+        android:text="Распознать" />
+
+    <Button
+        android:id="@+id/copyBTN"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:maxWidth="300dp"
+        android:maxHeight="60dp"
+        android:minWidth="150dp"
+        android:minHeight="40dp"
+        android:text="Копировать" />
+
+</LinearLayout>
